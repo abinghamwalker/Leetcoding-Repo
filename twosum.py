@@ -13,9 +13,7 @@ def twoSum(nums, target):
     num_dict = {}
     for i, num in enumerate(nums):
         leftover = target - num
-        print(num_dict)
         if leftover in num_dict:
-            print(leftover)
             return [num_dict[leftover], i]
         num_dict[num] = i
     return []
